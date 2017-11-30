@@ -1,5 +1,8 @@
+-- Create burgers_db
+
 CREATE DATABASE burgers_db ;
 USE burgers_db ;
+-- Create burgers
 CREATE TABLE burgers 
 (
     'id' int NOT NULL AUTO_INCREMENT,

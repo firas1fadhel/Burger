@@ -24,12 +24,16 @@ function objToSql(ob) {
 
 
 var orm = {
+		// SelectAll function for inserting one burger into table
+
 	selectAll: function(tableName,callback){
 		var queryString = "SELECT * FROM "+tableName;
 		connection.query(queryString,function(err,result){
 			callback(result);
 		});
 	},
+		// insertOne function for inserting one burger into table
+
 	insertOne: function(tableName, cols, vals, callback){
 		var queryString = "INSERT INTO "+tableName+" ("+ cols.toString() +") VALUES (?,?)";
 		console.log(queryString);
@@ -38,6 +42,8 @@ var orm = {
 			callback(result);
 		});
 	},
+		// updateOne function for inserting one burger into table
+
 	updateOne:function(tableName,objColVals, condition,callback){
 		console.log("objcolvals:"+objColVals);
 		console.log("objtosql:"+objToSql(objColVals));

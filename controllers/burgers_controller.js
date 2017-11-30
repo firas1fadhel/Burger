@@ -15,6 +15,7 @@ router.get("/", function(req, res) {
     res.render("index", hbsObject);
   });
 });
+// add a insertOne that posts the burgers created by the user and redirects back to index after completion.
 
 router.post("/", function(req, res) {
   console.log(req.body);
@@ -24,6 +25,7 @@ router.post("/", function(req, res) {
     res.redirect("/");
   });
 });
+// add a updateOne route that changes the status of the burger from being uneaten to eaten then redirects to index
 
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
