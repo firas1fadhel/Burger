@@ -16,4 +16,4 @@ Simply put, a user will enter the name of a burger they wish to consume. The nam
 #### Screenshot
 
 ![Eat-da-Burger Screenshot](/public/assests/img/Burger1.PNG)
-![Eat-da-Burger Screenshot](/public/assets/img/Burger2.PNG)
+![Eat-da-Burger Screenshot2](/public/assets/img/Burger2.PNG)
